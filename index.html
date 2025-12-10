@@ -3,52 +3,66 @@
 <head>
   <meta charset="utf-8">
   <title>Samwel Makyao</title>
-  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" href="index.css">
+  <style>
+    /* Key part: full screen centering */
+    body, html {
+      height: 100%;
+      margin: 0;
+    }
+    .center-wrapper {
+      height: 100vh;
+      display: flex;
+      justify-content: center; /* left-right center */
+      align-items: center; /* up-down center */
+    }
+    #profile_picture {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
 </head>
 
-<body class="mt-5 pt-4">
+<body>
 
-  <div class="container">
-    <div class="row d-flex justify-content-center">
+  <div class="center-wrapper">
+    <div class="container">
+      <div class="row justify-content-center">
 
-      <!-- Sidebar Menu -->
-      <div class="col-md-3 text-left">
-        <a href="./index.html" style="text-decoration: none; color: blue;">
-          <h6 class="m-0 p-0">samwel makyao</h6>
-        </a>
-        <div><a href="./projects.html">work</a></div>
-        <div><a href="./reads.html">reads</a></div>
-      </div>
-
-      <!-- Main Content -->
-      <div class="col-md-7">
-        <div class="row align-items-center">
-
-          <!-- Profile Image -->
-          <div class="col-4 text-right">
-            <img id="profile_picture" class="img-fluid rounded" src="./Salesforce-headshot-3.jpg" alt="profile picture">
-          </div>
-
-          <!-- Intro Text -->
-          <div class="col-8">
-            hey, there 👋! my name is samwel makyao!<br>
-            i bet i can guess why you're here.<br>
-            here to make your product better? or...<br>
-            curious how a UX designer codes too?<br>
-            either way, you're in the right place.<br><br>
-
-            communities:
-            <a href="https://www.colorstack.org/" target="_blank">colorstack</a> |
-            <a href="https://www.linkedin.com/in/samwel-makyao/" target="_blank">linkedin</a> |
-            <a href="https://karat.com/brilliant-black-minds/" target="_blank">brilliant-black-minds</a>
-          </div>
-
+        <div class="col-md-3 text-left">
+          <a href="./index.html" style="text-decoration: none; color: blue;">
+            <h6 class="m-0 p-0">samwel makyao</h6>
+          </a>
+          <div><a href="./projects.html">work</a></div>
+          <div><a href="./reads.html">reads</a></div>
         </div>
-      </div>
 
+        <div class="col-md-7">
+          <div class="row align-items-center">
+
+            <div class="col-4 text-right">
+              <img id="profile_picture" class="img-fluid rounded" src="./Salesforce-headshot-3.jpg">
+            </div>
+
+            <div class="col-8">
+              hey, there 👋! my name is samwel makyao!<br>
+              i bet i can guess why you're here.<br>
+              here to make your product better? or…<br>
+              curious how a UX designer codes too?<br>
+              either way, you're in the right place.<br><br>
+
+              communities:
+              <a href="https://www.colorstack.org/" target="_blank">colorstack</a> |
+              <a href="https://www.linkedin.com/in/samwel-makyao/" target="_blank">linkedin</a> |
+              <a href="https://karat.com/brilliant-black-minds/" target="_blank">brilliant-black-minds</a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
 
